@@ -1,0 +1,26 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 18 Dec 2017 23:51:46 at http://stepcone.gmrit.org/home.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://stepcone.gmrit.org/home.html -O1 "C:\My Web Sites\stepcone" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+23:54:40	Error: 	"Not Found" (404) at link stepcone.gmrit.org/paper-presentations/meech.html (from stepcone.gmrit.org/home.html)
+00:10:35	Error: 	"Not Found" (404) at link stepcone.gmrit.org/assets/assets/images/spotlights&other/adc_bg.jpg (from stepcone.gmrit.org/assets/css/no-animate.css)
+00:10:35	Error: 	"Not Found" (404) at link stepcone.gmrit.org/assets/images/first_icon.png (from stepcone.gmrit.org/assets/css/home.css)
+00:10:35	Error: 	"Not Found" (404) at link stepcone.gmrit.org/assets/images/main-stepcone app.png (from stepcone.gmrit.org/assets/css/home.css)
+00:10:35	Warning: 	Retry after error -4 (Incorrect length (947445 Bytes, 1612943 expected)) at link stepcone.gmrit.org/assets/images/paper/cse.jpg (from stepcone.gmrit.org/paper-presentations/index.html)
+00:10:49	Error: 	"Bad Request" (400) at link stepcone.gmrit.org/spotlights&other/ (from stepcone.gmrit.org/paper-presentations/eee.html)
+00:10:49	Warning: 	Retry after error -4 (Incorrect length (932223 Bytes, 1813887 expected)) at link stepcone.gmrit.org/assets/images/work/photovoltaics.jpg (from stepcone.gmrit.org/workshops/index.html)
+00:11:59	Error: 	"Not Found" (404) at link stepcone.gmrit.org/workshops/cnc-programming.html (from stepcone.gmrit.org/spotlights&other/adc.html)
+00:11:59	Error: 	"Not Found" (404) at link stepcone.gmrit.org/technical/residues.html (from stepcone.gmrit.org/spotlights&other/adc.html)
+00:11:59	Error: 	"Not Found" (404) at link stepcone.gmrit.org/assets/css/animate.css (from stepcone.gmrit.org/accommodation.html)
+00:11:59	Error: 	"Not Found" (404) at link stepcone.gmrit.org/assets/css/font.css (from stepcone.gmrit.org/accommodation.html)
+00:13:15	Error: 	"ModSecurity Action" (403) at link stepcone.gmrit.org/tamgoogy2013@gmail.com (from stepcone.gmrit.org/about.html)
+00:13:15	Error: 	"ModSecurity Action" (403) at link stepcone.gmrit.org/kavyabhogi1997@gmail.com (from stepcone.gmrit.org/about.html)
+00:13:15	Error: 	"ModSecurity Action" (403) at link stepcone.gmrit.org/vinukotidinesh@gmail.com (from stepcone.gmrit.org/about.html)
+00:13:15	Error: 	"Bad Request" (400) at link stepcone.gmrit.org/whatsapp%3A%2F%2Fsend%3Ftext%3DGMRIT%27s Stepcone%2C one of the biggest stages to showcase your traits is back as its 12th edition with many technical events%2C workshops%2C spotlights and paper presentations. Check out %2APAPER PRESENTATIONS%2A through this link%0D%0A👇👇👇%0D%0Ahttp%3A%2F%2Fstepcone.gmrit.org%2Fpaper%2Findex.html (from stepcone.gmrit.org/about.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 21 minutes 29 seconds : 216 links scanned, 200 files written (32052955 bytes overall) [30437785 bytes received at 23613 bytes/sec], 2365129 bytes transferred using HTTP compression in 81 files, ratio 27%
+(13 errors, 2 warnings, 0 messages)

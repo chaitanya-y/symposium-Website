@@ -1,0 +1,487 @@
+
+.smoothslides,
+.smoothslides-on {
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    min-height: 40px;
+    border-radius: 6px
+}
+
+.smoothslides {
+    background: rgba(255, 255, 255, .5)
+}
+
+.smoothslides img {
+    display: none
+}
+
+@keyframes throb {
+    0% {
+        opacity: 0;
+        transform: scale(1)
+    }
+    50% {
+        opacity: 1;
+        transform: scale(.2)
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes throb {
+    0% {
+        opacity: 0;
+        -webkittransform: scale(1)
+    }
+    50% {
+        opacity: 1;
+        -webkittransform: scale(.2)
+    }
+    100% {
+        opacity: 0;
+        -webkittransform: scale(1)
+    }
+}
+
+.smoothslides:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 50%;
+    top: 50%;
+    margin-left: -4px;
+    margin-top: -4px;
+    border-radius: 15px;
+    border: 2px solid #000;
+    animation: throb 1s infinite;
+    -webkit-animation: throb 1s infinite
+}
+
+.ss-slide-stage {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC)
+}
+
+.ss-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: center;
+    display: block;
+    width: 100%;
+    zoom: 1
+}
+
+.ss-slide img {
+    height: auto
+}
+
+.ss-caption-wrap {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 5px 5px 5px;
+    text-align: center;
+    box-sizing: border-box
+}
+
+.ss-caption {
+    min-height: 50px;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, .87);
+    color: #5A5A5A;
+    text-shadow: 0 0 10px #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4em;
+    border-radius: 3px;
+    padding-top: 15px;
+    box-sizing: border-box
+}
+
+.smoothslides-on a.ss-prev,
+.smoothslides-on a.ss-next {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    line-height: 1em;
+    color: #A1A1A1;
+    text-decoration: none;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 3px;
+    opacity: .5;
+    transition: .2s ease-out
+}
+
+.smoothslides-on a.ss-next {
+    left: auto;
+    right: 5px
+}
+
+.smoothslides-on:hover .ss-prev,
+.smoothslides-on:hover .ss-next {
+    opacity: 1
+}
+
+.smoothslides-on .ss-prev:hover,
+.smoothslides-on .ss-next:hover {
+    background: #fff;
+    color: #000
+}
+
+.ss-paginate-wrap {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    text-align: center
+}
+
+.ss-paginate {
+    display: inline-block;
+    line-height: 0
+}
+
+.ss-paginate a:link,
+.ss-paginate a:visited {
+    display: inline-block;
+    width: 16px;
+    height: 4px;
+    border-radius: 10px;
+    margin: 0 5px;
+    background: #ccc;
+    background: rgba(0, 0, 0, .1);
+    border: 2px solid #fff;
+    transition: .3s
+}
+
+.ss-paginate a:hover {
+    background: #ddd;
+    background: rgba(0, 0, 0, .3)
+}
+
+.ss-paginate a.ss-paginate-current {
+    background: #000;
+    background: rgba(0, 0, 0, .5)
+}
+
+@media (max-width:600px) {
+    .ss-paginate-wrap {
+        bottom: -35px
+    }
+    .ss-caption {
+        min-height: 0;
+        padding: 5px;
+        font-size: 12px
+    }
+    a.ss-prev,
+    a.ss-next {
+        bottom: auto;
+        top: 50%;
+        margin-top: -25px;
+        color: #000;
+        background: rgba(255, 255, 255, .3);
+        color: #444
+    }
+    .smoothslides-on,
+    .ss-slide-stage {
+        border-radius: 0
+    }
+}
+
+.slider {
+    height: 650px!important
+}
+
+.team-body {
+    line-height: 1.5;
+    color: #323232;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased
+}
+
+.heading-title {
+    margin-bottom: 100px
+}
+
+.text-center {
+    text-align: center
+}
+
+.heading-title h3 {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-weight: 400
+}
+
+.p-top-30 {
+    padding-top: 30px
+}
+
+.half-txt {
+    width: 60%;
+    margin: 0 auto;
+    display: inline-block;
+    line-height: 25px;
+    color: #7e7e7e
+}
+
+.text-uppercase {
+    text-transform: uppercase
+}
+
+.team-member,
+.team-member .team-img {
+    position: relative
+}
+
+.team-member {
+    overflow: hidden
+}
+
+.team-member,
+.team-member .team-img {
+    position: relative
+}
+
+.team-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, .6);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+.team-member:hover .team-hover .desk {
+    top: 65%
+}
+
+.team-member:hover .team-hover,
+.team-member:hover .team-hover .desk,
+.team-member:hover .team-hover .s-link {
+    opacity: 1
+}
+
+.s-link {
+    text-align: center;
+    margin-left: 79px
+}
+
+.team-hover .desk {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translateY(-55%);
+    -ms-transform: translateY(-55%);
+    transform: translateY(-55%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    padding: 0 20px
+}
+
+.desk,
+.desk h4,
+.team-hover .s-link a {
+    text-align: center;
+    color: #222;
+    margin-top: 25px
+}
+
+.team-member:hover .team-hover .s-link {
+    bottom: 10%
+}
+
+.team-member:hover .team-hover,
+.team-member:hover .team-hover .desk,
+.team-member:hover .team-hover .s-link {
+    opacity: 1
+}
+
+.team-hover .s-link {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translateY(45%);
+    -ms-transform: translateY(45%);
+    transform: translateY(45%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    font-size: 35px
+}
+
+.desk,
+.desk h4,
+.team-hover .s-link a {
+    text-align: center;
+    color: #222
+}
+
+.team-member .s-link a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 16px
+}
+
+.team-title {
+    position: static;
+    padding: 20px 0;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-align: center
+}
+
+.team-title h5 {
+    margin-bottom: 0;
+    display: block;
+    text-transform: uppercase
+}
+
+.team-title span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #a5a5a5;
+    letter-spacing: 1px
+}
+
+.team-hover,
+.team-img,
+.team-member,
+.team-title {
+    text-align: center
+}
+
+.team-member {
+    border: 5px solid #f6c72e;
+    width: 300px;
+    height: 300px
+}
+
+.team-img {
+    width: 300px;
+    height: 300px
+}
+
+.team-title {
+    text-align: center;
+    width: 300px
+}
+
+.center {
+    display: inline-block
+}
+
+.row-team {
+    text-align: center
+}
+
+.team-cod,
+.team-core,
+.team-web {
+    padding: 30px
+}
+
+.background {
+    position: relative;
+    z-index: 1;
+    &:before {
+        border-top: 2px solid #dfdfdf;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 95%;
+        z-index: -1
+    }
+    .line {
+        background: #fff;
+        padding: 0 15px
+    }
+}
+
+.promotional.team-core.center {
+    background-color: #f6c72e;
+    border-radius: 20px;
+    margin: 13px
+}
+
+.p-card {
+    width: 300px;
+    height: 380px
+}
+
+.card-share {
+    padding-top: 10px;
+    margin-bottom: -10px
+}
+
+.card-share h4 {
+    font-size: 25px
+}
+
+.card-share a {
+    color: #34af23;
+    padding: 0 10px 0 10px
+}
+
+.team-member:hover .team-img {
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%)
+}
+
+div.promotional i.fa {
+    font-size: 20px
+}
+
+.promotional .card-share h4 {
+    color: #000
+}
+
+.card-share h4 {
+    font-weight: 600
+}
+
+.card-share a:hover {
+    text-decoration: none
+}
+
+.card-share {
+    font-family: QuantifyBold
+}
+
+.row-team i.fa.fa-facebook {
+    color: #3b5998
+}
+
+.row-team i.fa.fa-envelope {
+    color: #d34836
+}
+
+.row-team i.fa.fa-linkedin {
+    color: #0077B5
+}
+
+.team-body i.fa {
+    font-size: 20px
+}

@@ -1,0 +1,156 @@
+body {
+    margin: 0
+}
+
+footer {
+    background: #232c3b
+}
+
+footer p {
+    color: #969ea7;
+    line-height: 26px
+}
+
+footer h6 {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 400
+}
+
+footer .news-letter h6 {
+    float: left;
+    color: #fff;
+    margin-top: 15px;
+    margin-right: 6px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 400
+}
+
+footer .news-letter form {
+    float: right;
+    width: 70%
+}
+
+footer .news-letter input {
+    border: 1px solid #3c4450;
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    background: none
+}
+
+footer .news-letter button {
+    width: 55px;
+    height: 50px;
+    float: right;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+    border: none;
+    color: #fff;
+    font-size: 20px
+}
+
+.footer-info {
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    padding-top: 50px
+}
+
+.footer-info .links li {
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+    position: relative
+}
+
+.footer-info .links li:before {
+    content: "\f0da";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #969ea7
+}
+
+.footer-info .links li a {
+    color: #969ea7;
+    line-height: 40px;
+    font-size: 13px;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0)
+}
+
+.footer-info .links li a:hover {
+    color: #fff
+}
+
+.footer-info .quote .form-control {
+    background: none;
+    border-radius: 0;
+    border: 1px solid #3f4753;
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 13px
+}
+
+.footer-info .quote textarea.form-control {
+    height: 80px
+}
+
+.footer-info .personal-info {
+    margin-top: 30px
+}
+
+.footer-info .personal-info,
+.footer-info .links {
+    padding-left: 0
+}
+
+.footer-info .personal-info li {
+    color: #969ea7;
+    font-size: 12px;
+    line-height: 24px;
+    border-bottom: 1px solid #3c4450;
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%
+}
+
+.footer-info .personal-info li i {
+    font-size: 18px;
+    color: #969ea7;
+    margin-right: 20px;
+    float: left;
+    margin-top: 5px
+}
+
+.rights {
+    background: #161c28;
+    margin-top: 50px;
+    padding: 15px 0
+}
+
+.rights p {
+    margin: 0
+}
+
+.social_icons li {
+    display: inline-block
+}
+
+.social_icons li a {
+    background: #4f5662;
+    height: 31px;
+    width: 31px;
+    text-align: center;
+    line-height: 31px;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 12px
+}
